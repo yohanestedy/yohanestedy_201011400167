@@ -20,6 +20,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String userId = intent.getStringExtra("USER_ID");
 
-        tvUserId.setText("User ID: " + userId);
+        tvUserId.setText("Selamat Datang: " + userId);
     }
 }
