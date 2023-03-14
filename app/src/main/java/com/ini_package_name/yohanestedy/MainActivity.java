@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -36,15 +37,45 @@ public class MainActivity extends AppCompatActivity {
                 builder.setPositiveButton("Ya", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        // Exit the app
-                        finishAffinity();
+                        // Untuk masuk ke Dialog form
+                        showExitReasonDialog();
                     }
                 });
                 builder.setNegativeButton("Tidak", null);
                 builder.show();
             }
         });
+
     }
+
+    private void showExitReasonDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Alasan Keluar");
+        final EditText input = new EditText(this);
+        builder.setView(input);
+        builder.setPositiveButton("Simpan", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                String exitReason = input.getText().toString();
+                // simpan alasan keluar
+                saveExitReason(exitReason);
+                // keluar dari aplikasi
+                finishAffinity();
+            }
+        });
+        builder.setNegativeButton("Batal", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.cancel();
+            }
+        });
+        builder.show();
+    }
+
+    private void saveExitReason(String exitReason) {
+        // kode untuk menyimpan alasan keluar
+    }
+
 
 
 }
