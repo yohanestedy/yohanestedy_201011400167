@@ -14,6 +14,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     TextView tvUserId;
+    Button btnBarang;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,15 @@ public class MainActivity extends AppCompatActivity {
                 });
                 builder.setNegativeButton("Tidak", null);
                 builder.show();
+            }
+        });
+
+        btnBarang = findViewById(R.id.btn_barang);
+        btnBarang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(intent);
             }
         });
 
