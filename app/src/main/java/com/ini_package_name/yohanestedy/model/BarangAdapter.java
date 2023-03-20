@@ -1,4 +1,4 @@
-package com.ini_package_name.yohanestedy;
+package com.ini_package_name.yohanestedy.model;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.ini_package_name.yohanestedy.R;
 
 import java.util.List;
 

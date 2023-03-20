@@ -5,16 +5,19 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import com.ini_package_name.yohanestedy.model.Barang;
+import com.ini_package_name.yohanestedy.model.BarangAdapter;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity2 extends AppCompatActivity {
+public class BarangActivity extends AppCompatActivity {
     private List<Barang> listBarang = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_barang);
 
         // Inisialisasi RecyclerView
         RecyclerView recyclerView = findViewById(R.id.recycler_view);

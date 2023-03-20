@@ -1,4 +1,4 @@
-package com.ini_package_name.yohanestedy;
+package com.ini_package_name.yohanestedy.model;
 
 public class Barang {
     private String nama;
