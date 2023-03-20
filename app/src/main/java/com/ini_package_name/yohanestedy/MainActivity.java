@@ -14,7 +14,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     TextView tvUserId;
-    Button btnBarang;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnBarang = findViewById(R.id.btn_barang);
+        Button btnBarang = findViewById(R.id.btn_barang);
         btnBarang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
