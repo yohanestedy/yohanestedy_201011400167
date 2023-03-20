@@ -35,3 +35,5 @@ public class BarangActivity extends AppCompatActivity {
         adapter.notifyDataSetChanged();
     }
 }
+
+
