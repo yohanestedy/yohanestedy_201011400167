@@ -11,10 +11,17 @@
         android:layout_height="wrap_content"/>
 
     <Button
+        android:id="@+id/btn_tabview"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Tab View" />
+    <Button
         android:id="@+id/btn_barang"
         android:layout_width="181dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:layout_below="@id/btn_tabview"
         android:text="Tampilkan Barang" />
 
 

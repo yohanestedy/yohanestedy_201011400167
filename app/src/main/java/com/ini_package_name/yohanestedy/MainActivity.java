@@ -56,6 +56,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button btnTab = findViewById(R.id.btn_tabview);
+        btnTab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TabActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void showExitReasonDialog() {
